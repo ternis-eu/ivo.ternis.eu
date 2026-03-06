@@ -5,25 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ivo Ternis</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=EB+Garamond:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; }
+
     body {
-      font-family: Georgia, 'Times New Roman', serif;
-      max-width: 400px;
-      margin: 60px auto;
-      padding: 20px;
-      background: #fafafa;
+      font-family: 'EB Garamond', Georgia, serif;
+      max-width: 420px;
+      margin: 72px auto;
+      padding: 0 24px 60px;
+      background: #f5f2ed;
+      color: #1a1a18;
     }
-    h1 { font-size: 1.5rem; margin-bottom: 30px; }
-    ul { list-style: none; padding: 0; }
-    li { margin-bottom: 12px; }
+
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin: 0 0 40px;
+      color: #111;
+    }
+
+    ul { list-style: none; padding: 0; margin: 0; }
+
+    li { margin-bottom: 2px; }
+
     a {
       display: flex;
       align-items: center;
-      gap: 10px;
-      color: #333;
+      gap: 12px;
+      color: #2c2c2a;
       text-decoration: none;
+      font-size: 1.05rem;
+      padding: 7px 10px;
+      border-radius: 4px;
+      transition: background 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
     }
-    a:hover { text-decoration: underline; }
-    svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    a:hover {
+      background: rgba(0,0,0,0.05);
+      color: #000;
+      padding-left: 14px;
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+      flex-shrink: 0;
+      opacity: 0.55;
+      transition: opacity 0.15s ease;
+    }
+
+    a:hover svg { opacity: 0.85; }
+
+    /* Divider before utility links (Seite Bearbeiten, Impressum) */
+    li:nth-last-child(2) {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,0,0,0.12);
+    }
   </style>
 </head>
 <body>
